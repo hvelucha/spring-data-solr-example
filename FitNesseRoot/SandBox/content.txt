@@ -1,0 +1,54 @@
+!2 Setup the spring context for the application and fixtures
+!pomFile pom.xml
+!|au.edu.parentPortal.fixtures.Column.ContextSetupFixture|
+|setUp()|
+|OK|
+
+!2 Adding 2 new Carousels with associated CMS version as 1&2 respectively
+
+!|au.edu.parentPortal.fixtures.Column.DatabasePopulateFixture|
+|description|name|url|associatedCMSVersionId|carouselMappingKey|createCarouselEntry()|
+|From Fitnesse Page new entry 1|From Fitnesse Page new entry 1|http://test|1|carousel1|OK|
+|From Fitnesse Page new entry 2|From Fitnesse Page new entry 2|http://test|2|carousel2|OK|
+
+!2 List All Carousels in the database now
+!3 Note: Carousel 1&2 are there from beginning and are not deleted in tear down
+
+!|au.edu.parentPortal.fixtures.Row.CarouselRowFixture|
+|getTitle()|getUrl()|getDescription()|
+| Fitnesse Entry titile|| Fitnesse Test Entry|
+|From Fitnesse Page Test1 - updating approved|http://test|From Fitnesse Page Test1 - updating approved|
+| From Fitnesse Page new entry 1|http://test| From Fitnesse Page new entry 1|
+| From Fitnesse Page new entry 2|http://test| From Fitnesse Page new entry 2|
+
+
+!2 As an user tries to Edit Carousel - Carousel associated to Published versions should not be allowed to be edited
+!3 in the test below Carousel 1 is associated to published (not editable) and Carousel id 2 is associated to Approved (can edit) versions respectively
+
+!|au.edu.parentPortal.fixtures.Column.CarouselColumnFixture|
+|id|carouselMappingKey|description|name|url|update()|
+|1||From Fitnesse Page Test - updating published|From Fitnesse Page Test - updating published|http://test|OK|
+|2||From Fitnesse Page Test1 - updating approved|From Fitnesse Page Test1 - updating approved|http://test|OK|
+||carousel1|From Fitnesse Page new entry 1 - updating using key - should not be updated|From Fitnesse Page Test1 - updating approved|http://test|OK|
+||carousel2|From Fitnesse Page new entry 2 - updating using key - should be updated|From Fitnesse Page new entry 2 - updating approved|http://test|OK|
+
+!3 Get the current name and description.
+!3 Assert that only carousel with id 2 has the name and description changed
+
+!|au.edu.parentPortal.fixtures.Row.CarouselRowFixture|
+|getTitle()|getUrl()|getDescription()|
+|Fitnesse Entry titile|||
+|From Fitnesse Page new entry 1|http://test|From Fitnesse Page new entry 1|
+|From Fitnesse Page Test1 - updating approved|http://test|From Fitnesse Page Test1 - updating approved|
+|From Fitnesse Page new entry 2 - updating approved|http://test|From Fitnesse Page new entry 2 - updating using key - should be updated|
+
+!3 Checking Audit point cut expression
+!|au.edu.parentPortal.fixtures.Column.DatabasePopulateFixture|
+|versionState|createCMSVersionEntry()|
+|APPROVED|OK|
+
+!2 Tear Down
+!3 Deleting CMS related values..avoiding seed values
+|au.edu.parentPortal.fixtures.Column.DatabaseTeardownFixture|
+|tearDown()|
+|OK|

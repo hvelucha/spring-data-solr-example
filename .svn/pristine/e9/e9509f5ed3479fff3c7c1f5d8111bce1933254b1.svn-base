@@ -1,0 +1,9 @@
+# Database connection
+jdbc.url=jdbc:postgresql://localhost:5432/scootle
+jdbc.username=
+jdbc.password=
+
+# Working mode
+debugMode=false
+
+scootle.url=http://uat.scootle.edu.au

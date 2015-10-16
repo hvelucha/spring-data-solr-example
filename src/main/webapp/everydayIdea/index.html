@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <name>Everyday Ideas List</name>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+        <script src="/js/utils.js"></script>
+        <script src="/js/home.js"></script>
+    </head>
+    <body>
+        <div ng-app="list_idea">
+            <form ng-controller="formController">
+                <table>
+                    <thead>
+                        <td>ID</td>
+                        <td>Title</td>
+                        <td>Topic</td>
+                       <!-- <td>Content Id</td>
+                        <td>Year Level</td>-->
+
+
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="everydayIdea in everydayIdeas">
+                            <td>{{ everydayIdea.internal_id }}</td>
+                            <td>{{ everydayIdea.title }}</td>
+                            <td>{{ everydayIdea.topic }}</td>
+                            <!--<td>{{ everydayIdea.contentId }}</td>
+                            <td>{{ everydayIdea.yearLevel }}</td>-->
+
+
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

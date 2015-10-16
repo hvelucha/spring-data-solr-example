@@ -1,0 +1,55 @@
+package au.edu.parentPortal.controllers;
+
+import au.edu.parentPortal.beans.EverydayIdea;
+import au.edu.parentPortal.exceptions.NotFoundException;
+import au.edu.parentPortal.manager.EverydayIdeaManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.util.Assert;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
+
+/**
+ * Created by hveluchamy on 5/10/2015.
+ */
+@Controller
+public class EverydayIdeaController extends BaseController {
+    private final Logger LOG = LogManager.getLogger(EverydayIdeaController.class);
+
+    @Autowired
+    private EverydayIdeaManager everydayIdeaManager;
+
+    @RequestMapping(value="/everydayIdeas/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+     @ResponseBody
+     public EverydayIdea getEverydayIdeaById(@PathVariable("id") Long id) throws Exception {
+        Assert.notNull(id);
+        LOG.info("About to retrieve EverydayIdea id [" + id + "]");
+        EverydayIdea everydayIdea = everydayIdeaManager.getEverydayIdea(id);
+        if(everydayIdea == null) {
+            throw new NotFoundException("everydayIdea.id", "EverydayIdea id [" + id + "] not found");
+        }
+
+        return everydayIdea;
+    }
+
+    @RequestMapping(value="/everydayIdeas", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public List<EverydayIdea> getEverydayIdeas() throws Exception {
+        LOG.error("About to retrieve EverydayIdeas");
+        List<EverydayIdea> everydayIdeas = everydayIdeaManager.getAllIdeas();
+        for (EverydayIdea everydayIdea : everydayIdeas) {
+            LOG.info(everydayIdea.toString());
+        }
+        return everydayIdeas;
+
+    }
+
+
+}

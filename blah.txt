@@ -1,0 +1,56 @@
++ Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building parent-portal
+[INFO]    task-segment: [clean, jetty:run]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] Deleting directory D:\Development\ParentWebSite\target
+[INFO] Preparing jetty:run
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 0 resource
+[INFO] Copying 11 resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 49 source files to D:\Development\ParentWebSite\target\classes
+[WARNING] /D:/Development/ParentWebSite/src/main/java/au/edu/parentPortal/dao/hibernate/EverydayIdeaAuditDaoImpl.java: Some input files use unchecked or unsafe operations.
+[WARNING] /D:/Development/ParentWebSite/src/main/java/au/edu/parentPortal/dao/hibernate/EverydayIdeaAuditDaoImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\Development\ParentWebSite\src\test\resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to D:\Development\ParentWebSite\target\test-classes
+[WARNING] /D:/Development/ParentWebSite/src/test/java/au/edu/parentPortal/util/TearDownUtil.java: Some input files use or override a deprecated API.
+[WARNING] /D:/Development/ParentWebSite/src/test/java/au/edu/parentPortal/util/TearDownUtil.java: Recompile with -Xlint:deprecation for details.
+[INFO] [jetty:run {execution: default-cli}]
+[INFO] Configuring Jetty for project: parent-portal
+[INFO] webAppSourceDirectory not set. Defaulting to D:\Development\ParentWebSite\src\main\webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = D:\Development\ParentWebSite\target\classes
+[INFO] Context path = /
+[INFO] Tmp directory = D:\Development\ParentWebSite\target\tmp
+[INFO] Web defaults = org/eclipse/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] web.xml file = file:/D:/Development/ParentWebSite/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = D:\Development\ParentWebSite\src\main\webapp
+2015-10-16 14:30:51,928 INFO Log4j appears to be running in a Servlet environment, but there's no log4j-web module available. If you want better web container support, please add the log4j-web JAR to your web archive or server lib directory.
+[INFO ] 2015-10-16 14:30:51.976 [main] EnvironmentPropertyConfigurer - application.environment system property is set to dev
+[INFO ] 2015-10-16 14:30:51.977 [main] EnvironmentPropertyConfigurer - Setting property resource locations to: class path resource [environment/application.properties] and class path resource [environment/dev-application.properties]
+[INFO ] 2015-10-16 14:30:54.496 [main] EnvironmentPropertyConfigurer - application.environment system property is set to dev
+[INFO ] 2015-10-16 14:30:54.496 [main] EnvironmentPropertyConfigurer - Setting property resource locations to: class path resource [environment/application.properties] and class path resource [environment/dev-application.properties]
+[INFO] Started Jetty Server
+[INFO ] 2015-10-16 14:31:20.677 [qtp2116306336-32] LoginInterceptor - ############ Do your login logic here ############
+[ERROR] 2015-10-16 14:31:20.683 [qtp2116306336-32] EverydayIdeaController - About to retrieve EverydayIdeas
+[INFO ] 2015-10-16 14:31:20.971 [qtp2116306336-32] EverydayIdeaController - got by topic created
+[INFO] Jetty server exiting.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 43 minutes 37 seconds
+[INFO] Finished at: Fri Oct 16 15:14:16 EST 2015
+[INFO] Final Memory: 59M/911M
+[INFO] ------------------------------------------------------------------------
+Terminate batch job (Y/N)? 

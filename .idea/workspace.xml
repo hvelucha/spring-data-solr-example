@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="0ca2ce1a-407c-42a1-b8b2-9baaac1b2212" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/manager/BookRepositoryManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/BookRepositoryMethods.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/BookRepositoryMethodsImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/EverydayIdeaRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdeaSolr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/SolrContext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/solr-configuration.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209103351_29_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209103351_29_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209110125_29_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209110125_29_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209120824_29_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209120824_29_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209120907_29_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209120907_29_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209133153_29_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209133153_29_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209160526_29_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141209160526_29_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141210114635_28_0_0_3.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141210114635_28_0_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211094843_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211094843_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211105052_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211105052_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211105350_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211105350_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211121715_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211121715_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122016_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122016_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122226_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122226_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122428_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122428_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122612_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122612_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122709_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211122709_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211123447_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211123447_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211123804_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211123804_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124057_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124057_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124134_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124134_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124533_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124533_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124647_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124647_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124720_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211124720_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211125323_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211125323_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211125434_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211125434_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211125900_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211125900_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211125931_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211125931_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211130339_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211130339_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211130425_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211130425_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211130954_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211130954_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211131024_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211131024_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211131329_28_5_0_3.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211131329_28_5_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211131416_28_9_0_3.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211131416_28_9_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211134814_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211134814_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135039_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135039_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135050_0_8_0_5.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135050_0_8_0_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135158_28_13_0_3.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135158_28_13_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135221_29_17_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135221_29_17_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135231_29_1_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135231_29_1_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135345_30_0_0_1.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135345_30_0_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135405_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135405_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135557_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135557_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135633_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211135633_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211140134_29_1_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211140134_29_1_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211140416_29_1_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211140416_29_1_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211141829_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141211141829_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212102036_12_10_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212102036_12_10_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212102406_12_10_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212102406_12_10_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212102611_12_10_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212102611_12_10_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212102847_25_4_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212102847_25_4_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212103757_24_5_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212103757_24_5_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212104551_25_4_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212104551_25_4_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212124344_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212124344_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212125527_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212125527_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212132635_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212132635_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212133424_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212133424_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212133440_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212133440_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212133505_0_0_0_7.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212133505_0_0_0_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212133511_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212133511_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212134710_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212134710_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212134915_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212134915_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212135057_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212135057_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212155611_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212155611_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212155958_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212155958_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212160037_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141212160037_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215092531_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215092531_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215102939_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215102939_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215103549_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215103549_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215103730_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215103730_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215105919_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215105919_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215110137_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215110137_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215110346_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215110346_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215111304_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215111304_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215111424_15_7_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215111424_15_7_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215111715_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215111715_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215111939_27_2_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215111939_27_2_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215112057_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215112057_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113147_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113147_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113312_15_7_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113312_15_7_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113539_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113539_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113548_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113548_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113716_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113716_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113836_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215113836_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215114715_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215114715_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115117_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115117_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115200_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115200_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115252_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115252_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115303_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115303_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115534_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115534_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115655_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115655_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115916_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215115916_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120021_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120021_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120116_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120116_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120222_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120222_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120442_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120442_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120531_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120531_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120839_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215120839_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215121432_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215121432_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215121549_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215121549_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215121730_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215121730_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215122513_27_2_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215122513_27_2_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215122522_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215122522_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215122714_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215122714_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215122914_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215122914_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123216_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123216_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123359_15_7_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123359_15_7_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123437_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123437_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123748_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123748_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123843_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215123843_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215124001_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215124001_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215124644_27_2_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215124644_27_2_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215124717_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215124717_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215124824_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215124824_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215125811_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215125811_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215125922_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215125922_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215134516_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215134516_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215135039_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215135039_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215135248_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215135248_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215135327_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215135327_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215135855_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215135855_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215140059_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215140059_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215140154_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215140154_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215140424_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215140424_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215140752_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215140752_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215141405_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215141405_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215142502_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215142502_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215143611_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215143611_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215143739_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215143739_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215144245_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215144245_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215144459_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215144459_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215144826_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215144826_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215151108_15_7_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215151108_15_7_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215151513_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215151513_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215152009_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215152009_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215152435_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215152435_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215152703_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215152703_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215153018_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215153018_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215153114_27_2_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215153114_27_2_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215153123_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215153123_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215154529_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215154529_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215161220_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215161220_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215161512_2_7_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215161512_2_7_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215161722_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215161722_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215165642_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215165642_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215170607_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215170607_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215171038_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215171038_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215171543_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215171543_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215171935_2_7_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215171935_2_7_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172027_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172027_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172645_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172645_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172712_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172712_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172901_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172901_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172939_15_7_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215172939_15_7_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215173045_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215173045_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215173301_12_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215173301_12_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215173557_27_2_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215173557_27_2_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215173603_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215173603_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215174008_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215174008_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215174144_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141215174144_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216092654_29_0_0_3.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216092654_29_0_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216093508_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216093508_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094044_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094044_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094257_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094257_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094538_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094538_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094908_30_4_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094908_30_4_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094919_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216094919_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216095809_0_9_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216095809_0_9_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216095858_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216095858_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216104352_2_7_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216104352_2_7_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216104920_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216104920_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216105207_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216105207_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216105345_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216105345_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216105717_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216105717_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216105738_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216105738_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111121_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111121_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111223_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111223_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111345_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111345_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111454_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111454_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111631_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111631_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111816_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111816_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111927_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216111927_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216112927_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216112927_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216113736_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216113736_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216114407_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216114407_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216114523_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216114523_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216115807_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216115807_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120017_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120017_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120153_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120153_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120500_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120500_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120516_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120516_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120630_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120630_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120744_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216120744_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216121020_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216121020_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216121455_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216121455_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216121648_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216121648_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216121903_13_9_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216121903_13_9_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216122819_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216122819_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216122924_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216122924_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216123047_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216123047_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216123242_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216123242_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216131800_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216131800_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216131915_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216131915_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216132315_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216132315_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216133054_25_2_0_2.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216133054_25_2_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216133337_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216133337_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216134139_21_5_0_3.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216134139_21_5_0_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216134238_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216134238_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216134313_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216134313_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216143952_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216143952_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216143959_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216143959_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144057_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144057_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144113_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144113_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144235_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144235_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144429_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144429_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144717_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216144717_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216162432_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216162432_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216162515_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216162515_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216164031_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216164031_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216164319_29_1_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216164319_29_1_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216164359_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216164359_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216164405_30_0_0_0.xml" afterPath="$PROJECT_DIR$/FitNesseRoot/files/testResults/SandBox/20141216164405_30_0_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdea.java" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/controllers/EverydayIdeaController.java" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/controllers/EverydayIdeaController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/EverydayIdeaDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/EverydayIdeaDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/ErrorLogs/SandBox/content.txt" afterPath="$PROJECT_DIR$/FitNesseRoot/ErrorLogs/SandBox/content.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FitNesseRoot/SandBox/content.txt" afterPath="$PROJECT_DIR$/FitNesseRoot/SandBox/content.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dao-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dao-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/everydayIdea/edit.html" afterPath="$PROJECT_DIR$/src/main/webapp/everydayIdea/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/everydayIdea/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/everydayIdea/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manager-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/manager-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
+    <ignored path="parentWebsite.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="EverydayIdeaSolr.java" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdeaSolr.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.060642093" vertical-offset="0" max-vertical-offset="1530">
+                    <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="46" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="EverydayIdeaRepository.java" pinned="false" current="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/EverydayIdeaRepository.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+                    <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="parentWebsite" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="EverydayIdea.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdea.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
+              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1577#1578#0" expanded="true" />
+                <element signature="e#1611#1612#0" expanded="true" />
+                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#2344#2345#0" expanded="true" />
+                <element signature="e#2374#2375#0" expanded="true" />
+                <element signature="e#2424#2425#0" expanded="true" />
+                <element signature="e#2466#2467#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Activities.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/Activities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EverydayIdeaController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/controllers/EverydayIdeaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.205379" vertical-offset="0" max-vertical-offset="1088">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/everydayIdea/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="714">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EverydayIdeaDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/EverydayIdeaDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookRepositoryMethodsImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/BookRepositoryMethodsImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="833">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookRepositoryMethods.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/BookRepositoryMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookRepositoryManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/manager/BookRepositoryManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EverydayIdeaRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/EverydayIdeaRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/everydayIdea/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/RollforwardScripts/ProdState.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/SolrSearchApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/SolrConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/Activities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/ActivityItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/BookRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/BookRepositoryMethodsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/BookRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/BookRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/manager-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dao-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/solr-configuration.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/BookRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/EverydayIdeaDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdeaSolr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/SolrContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdea.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/manager/BookRepositoryManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/BookRepositoryMethodsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/BookRepositoryMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/EverydayIdeaRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/home.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/everydayIdea/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/au/edu/parentPortal/controllers/EverydayIdeaController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="fitnesse" />
+        <option value="artifactory" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="parent-portal" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Profiles" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everydayIdea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hibernate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParentWebSite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parentPortal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\hveluchamy\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Development\ParentWebSite" />
+          <option name="myCopyRoot" value="D:\Development\ParentWebSite" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\Development\ParentWebSite" />
+          <option name="myCopyRoot" value="D:\Development\ParentWebSite" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ca2ce1a-407c-42a1-b8b2-9baaac1b2212" name="Default" comment="" />
+      <created>1444359183070</created>
+      <updated>1444359183070</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Rollforward script check-in">
+      <created>1444689737481</created>
+      <updated>1444689737481</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding @Table to Activity and activity item">
+      <created>1444710494128</created>
+      <updated>1444710494128</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removing @Table to Activity and activity item. Need to re-visit later while working around activity">
+      <created>1444712445293</created>
+      <updated>1444712445293</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25776756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2761276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Rollforward script check-in" />
+    <MESSAGE value="Adding @Table to Activity and activity item" />
+    <MESSAGE value="removing @Table to Activity and activity item. Need to re-visit later while working around activity" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing @Table to Activity and activity item. Need to re-visit later while working around activity" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/solr-configuration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="5015">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/helper/HibernateEventWiring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/helper/CreateAtEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/helper/UpdatedAtEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/environment/dev-application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/RollforwardScripts/ProdState.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2188" max-vertical-offset="2720">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/ActivityItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/EverydayIdeaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/ActivityDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/ActivityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/DaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/manager-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5112782" vertical-offset="0" max-vertical-offset="532">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/fitnesse-object-tracking-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.827027" vertical-offset="0" max-vertical-offset="578">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-solr/1.3.0.RELEASE/spring-data-solr-1.3.0.RELEASE.jar!/org/springframework/data/solr/config/spring-solr-1.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="563" max-vertical-offset="1530">
+          <caret line="43" column="68" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.IdeaIC13/system/extResources/977a1048_spring-repository.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33270678" vertical-offset="316" max-vertical-offset="4080">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/fitnesse-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22167487" vertical-offset="3038" max-vertical-offset="5270">
+          <caret line="184" column="20" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/interceptor-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="434">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="629">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/EverydayIdeaAuditDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dao-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/GameAuditDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/hibernate-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5851064" vertical-offset="240" max-vertical-offset="1309">
+          <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-solr/1.3.0.RELEASE/spring-data-solr-1.3.0.RELEASE.jar!/org/springframework/data/solr/repository/SolrCrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12390671" vertical-offset="0" max-vertical-offset="686">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-solr/1.3.0.RELEASE/spring-data-solr-1.3.0.RELEASE.jar!/org/springframework/data/solr/repository/support/SimpleSolrRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11904762" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/solr-configuration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="1649">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/DateAuditable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.9.0.RELEASE/spring-data-commons-1.9.0.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23581336" vertical-offset="0" max-vertical-offset="793">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/AbstractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="23" column="50" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-solr/1.3.0.RELEASE/spring-data-solr-1.3.0.RELEASE.jar!/org/springframework/data/solr/core/convert/MappingSolrConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10897436" vertical-offset="0" max-vertical-offset="1292">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.9.0.RELEASE/spring-data-commons-1.9.0.RELEASE.jar!/org/springframework/data/repository/PagingAndSortingRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1875" vertical-offset="0" max-vertical-offset="816">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/manager/EverydayIdeaManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-solr/1.3.0.RELEASE/spring-data-solr-1.3.0.RELEASE.jar!/org/springframework/data/solr/core/SolrTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.716981" vertical-offset="651" max-vertical-offset="2074">
+          <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.9.0.RELEASE/spring-data-commons-1.9.0.RELEASE.jar!/org/springframework/data/mapping/model/BasicPersistentEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8490567" vertical-offset="591" max-vertical-offset="1343">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blah.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7545126" vertical-offset="483" max-vertical-offset="1037">
+          <caret line="53" column="452" selection-start-line="53" selection-start-column="452" selection-end-line="53" selection-end-column="452" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/everydayIdea/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17171717" vertical-offset="0" max-vertical-offset="792">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/SolrContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/EverydayIdeaDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/Activities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#2344#2345#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/beans/EverydayIdeaSolr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.060642093" vertical-offset="0" max-vertical-offset="1530">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/BookRepositoryMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/hibernate/BookRepositoryMethodsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="833">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/manager/BookRepositoryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/dao/EverydayIdeaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/everydayIdea/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="714">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/au/edu/parentPortal/controllers/EverydayIdeaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.205379" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

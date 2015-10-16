@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="activityDao" class="au.edu.parentPortal.dao.hibernate.ActivityDaoImpl" />
+    <bean id="activityAuditDao" class="au.edu.parentPortal.dao.hibernate.ActivitiesAuditDaoImpl" />
+    <bean id="everydayIdeaDao" class="au.edu.parentPortal.dao.hibernate.EverydayIdeaDaoImpl"/>
+    <bean id="everydayIdeaAuditDao" class="au.edu.parentPortal.dao.hibernate.EverydayIdeaAuditDaoImpl"/>
+    <bean id="gameDao" class="au.edu.parentPortal.dao.hibernate.GameDaoImpl"/>
+    <bean id="gameAuditDao" class="au.edu.parentPortal.dao.hibernate.GameAuditDaoImpl"/>
+</beans>

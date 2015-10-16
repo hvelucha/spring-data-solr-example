@@ -1,0 +1,153 @@
+package au.edu.parentPortal.beans;
+
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.persistence.*;
+import java.util.List;
+
+/**
+ * Created by hveluchamy on 5/10/2015.
+ */
+
+public class Activities extends AbstractEntity {
+    @Id
+    @Column(name="internal_id")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
+
+    @Length(min=1, max=1000)
+    @NotEmpty
+    private String title;
+
+    @Column(name="year_level")
+    private String yearLevel;
+
+    @NotEmpty
+    private String topic;
+
+    @Length(min=1, max=1000)
+    @Column(name="brief_description")
+    private String briefDescription;
+
+    @Length(min=1, max=1000)
+    private String description;
+
+    @Length(min=1, max=1000)
+    @Column(name="skill_description")
+    private String skillDescription;
+
+    @Length(min=1, max=1000)
+    @Column(name="useful_terms")
+    private String usefulTerms;
+
+    @Column(name="ac_code")
+    private String ac_code;
+
+    @Length(min=1, max=1000)
+    @Column(name="content_id")
+    private String contentId;
+
+    @JoinColumn(name="game_id")
+    @OneToOne (fetch = FetchType.LAZY, orphanRemoval = false)
+    private Game game;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "activities", orphanRemoval=true)
+    private List<ActivityItem> activityItems;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getYearLevel() {
+        return yearLevel;
+    }
+
+    public void setYearLevel(String yearLevel) {
+        this.yearLevel = yearLevel;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public String getBriefDescription() {
+        return briefDescription;
+    }
+
+    public void setBriefDescription(String briefDescription) {
+        this.briefDescription = briefDescription;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getSkillDescription() {
+        return skillDescription;
+    }
+
+    public void setSkillDescription(String skillDescription) {
+        this.skillDescription = skillDescription;
+    }
+
+    public String getUsefulTerms() {
+        return usefulTerms;
+    }
+
+    public void setUsefulTerms(String usefulTerms) {
+        this.usefulTerms = usefulTerms;
+    }
+
+    public String getAc_code() {
+        return ac_code;
+    }
+
+    public void setAc_code(String ac_code) {
+        this.ac_code = ac_code;
+    }
+
+    public String getContentId() {
+        return contentId;
+    }
+
+    public void setContentId(String contentId) {
+        this.contentId = contentId;
+    }
+
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
+    }
+
+    public List<ActivityItem> getActivityItems() {
+        return activityItems;
+    }
+
+    public void setActivityItems(List<ActivityItem> activityItems) {
+        this.activityItems = activityItems;
+    }
+}

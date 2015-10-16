@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					   http://www.springframework.org/schema/tx
+                            http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <bean id="propertyConfigurer" class="au.edu.parentPortal.util.EnvironmentPropertyConfigurer"></bean>
+    
+    <bean id="dataSource"
+          class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <property name="timeBetweenEvictionRunsMillis" value="300000" />
+        <property name="numTestsPerEvictionRun" value="6" />
+        <property name="minEvictableIdleTimeMillis" value="1800000" />
+        <property name="initialSize" value="10" />
+        <property name="maxTotal" value="100" />
+        <property name="maxIdle" value="80" />
+        <property name="maxWaitMillis" value="5000" />
+        <property name="poolPreparedStatements" value="true" />
+        <property name="maxOpenPreparedStatements" value="200" />
+    </bean>
+
+
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="annotatedClasses">
+            <list>
+                <value>au.edu.parentPortal.beans.Activities</value>
+                <value>au.edu.parentPortal.beans.audit.ActivitiesAudit</value>
+                <value>au.edu.parentPortal.beans.EverydayIdea</value>
+                <value>au.edu.parentPortal.beans.audit.EverydayIdeaAudit</value>
+                <value>au.edu.parentPortal.beans.Game</value>
+                <value>au.edu.parentPortal.beans.audit.GameAudit</value>
+                <value>au.edu.parentPortal.beans.ParentImage</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</prop>
+                <prop key="hibernate.show_sql">${hibernate.showSql}</prop>                
+                <prop key="hibernate.cache.use_second_level_cache">false</prop>
+                <prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+            </props>
+        </property>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="txManager"/>
+
+    <bean id="txManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+        <constructor-arg ref="sessionFactory"/>
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.simple.SimpleJdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+    <bean id="createAtEvenListener" class="au.edu.parentPortal.beans.helper.CreateAtEventListener" />
+    <bean id="updatedAtEvenListener" class="au.edu.parentPortal.beans.helper.UpdatedAtEventListener"/>
+
+</beans>
